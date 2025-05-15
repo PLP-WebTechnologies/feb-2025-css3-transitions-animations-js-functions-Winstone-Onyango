@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.controls {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.action-btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #2980b9;
+}
+
+.preference-form {
+    margin-top: 15px;
+}
+
+.preference-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.preference-form input,
+.preference-form select {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.animation-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+/* Animation Classes */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+.bounce {
+    animation: bounce 1s ease infinite;
+}
+
+.slow {
+    animation-duration: 3s;
+}
+
+.fast {
+    animation-duration: 0.5s;
+}
+
+.history {
+    margin-top: 30px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}

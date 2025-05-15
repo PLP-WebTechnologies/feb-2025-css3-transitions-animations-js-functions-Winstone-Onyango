@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations with localStorage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animation Playground</h1>
+        
+        <div class="controls">
+            <button id="animate-btn" class="action-btn">Trigger Animation</button>
+            <button id="reset-btn" class="action-btn">Reset Preferences</button>
+            
+            <div class="preference-form">
+                <label for="color-pref">Choose Animation Color:</label>
+                <input type="color" id="color-pref" value="#3498db">
+                
+                <label for="speed-pref">Animation Speed:</label>
+                <select id="speed-pref">
+                    <option value="slow">Slow</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="animation-box" class="animation-box">
+            <p>Watch me animate!</p>
+        </div>
+        
+        <div class="history">
+            <h2>Animation History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
